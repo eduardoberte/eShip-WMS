@@ -25,13 +25,14 @@ function trocarFoto() {
 
 function criarDadosFicticios() {
 
-    console.log("Dados fictícios criados");
+    var imagem = document.getElementById("imagem");
+    console.log(imagem);
 }
 
-//criado um exemplo simples de uma função recebendo a informação do click do mouse. 
+//criado um exemplo simples de uma função recebendo a informação de qual foto esta selecionada e imprimindo no console. 
 
 function alternarModal() {
-
+    
     var modal = document.getElementById("modal");
     modal.style.display = modal.style.display === "block" ? "none" : "block";
 }
