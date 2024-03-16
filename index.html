@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pojeto e-Ship WMS</title>
+
+
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/2ea45fdeec.js" crossorigin="anonymous"></script>
+</head>
+<body class="light-mode">
+
+    <div class="CardPrincipal">
+        <div class="imgDiv">
+            <img id="imagem" src="src/img/avatarAzul.jpg"  src="" alt="perfil">
+        </div>
+
+        <h2>@teste</h2>
+        
+        <label class="switch">
+            <input id="darkModeSwitch" type="checkbox" onchange="toggleDarkMode()">
+            <span class="slider round"></span>
+        </label>
+        
+
+        <button onclick="criarDadosFicticios()">Visualizar configurações</button>
+
+        <button onclick="trocarFoto()">Ajustar foto</button>
+
+        <div class="midia">
+
+            <a href="https://github.com/eduardoberte"><i class="fa-brands fa-github fa-xl corfive"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-xl corfive"></i></a>
+            <!-- Deixei o link padrão do instagram pois não possuo conta -->
+            <a href="https://www.linkedin.com/in/eduardo-berte/"><i class="fa-brands fa-linkedin fa-xl corfive"></i></a>
+            <!-- utilizei a biblioteca do fontawesome para trazer os icons das redes sociais podendo assim facilitar a troca de cor no momento da transição -->
+
+        </div>
+
+       
+        <div class="container">
+            <p>feito com</p>
+            <div class="seta" onclick="alternarModal()"></div>
+            <div id="modal" class="modal">
+                <span class="fechar" onclick="alternarModal()">&times;</span>
+                <p>JavaScript</p><br>
+                <p>CSS</p><br>
+                <p>HTML</p><br>
+                <p>Fontawesome</p><br>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <script src="src/script.js"></script>
+</body>
+</html>
